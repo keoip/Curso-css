@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/*Uma configuração tanto para o margin, border, padding, outline, é que se usamos um shorthand em qualque um e colocamos um valor apenas, esse valor vai ser usado para todas as medidas(right,left,bottom...), já se colocamos duas medidas esse como 10px 20px o primeiro(10px) valor vai ser usado no top e bottom já o segundo(20px) na left e right*/
+
+/* BOX-LEVEL */
+h1{
+    background-color: aquamarine;
+    width: 300px;
+    height: 300px;
+    border: 10px solid black;
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    /*ou podemos podemos usar um shorthand de padding usando como base 4 parametros, "top", "right", "bottom", "left", nessa ordem:
+    padding: 10px 10px 10px 10px
+    */
+
+    margin-top: 10px;
+    margin-right: auto;
+    margin-bottom: 32px;
+    margin-left: auto;
+    /*do mesmo jeito que o padding só que aqui é margin:
+    margin: 10px 10px 10px 10px
+    */
+    
+    outline: 5px dashed rgb(247, 75, 75);/*shorthand de outline*/
+    /* ou podemos colocar assim:
+    outline-width
+    outline-style
+    outline-color
+    */
+}
+/* INLINE-LEVEL */
+a{
+    border: 10px solid rgb(253, 43, 43);
+    padding-top: 0px;
+    padding-right: 12px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,66 @@
+@charset "UTF-8";
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+ background-image: linear-gradient(to right, #6b3f9581,#C5C5DE );
+}
+/* HEADER(CABEÇALHO) */
+.direita {
+  margin-right: 15px;
+  text-align: right;
+  justify-content: flex-end;
+  color: black;
+}
+.esquerda {
+  display: flex;
+  margin-top: 15px;
+  height: 0px;
+  color: black;
+}
+a {
+  text-decoration: dotted;
+}
+nav {
+  background-image: linear-gradient(to right, #a8a1e0, #a8a1e0);
+  box-shadow: 10px 8px 14px 0px rgba(0, 0, 0, 0.144);
+  height: 35px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* MAIN(CONTEUDO PRINCIPAL) */
+main{
+   background-image: linear-gradient(to right, #a8a1e0,#a8a1e0);
+   border-radius: 10px;
+   padding: 10px;
+   margin-top: 13px;
+   box-shadow: 10px 8px 14px 0px rgba(0, 0, 0, 0.144) ;
+   width: 350px;
+   display: inline-block;
+}
+article > h2{
+    font-weight: normal;
+    text-align: center;
+    margin: auto;
+}
+article > p{
+    text-indent: 10px;
+    text-align: justify;
+}
+#futebol{
+    background-image: linear-gradient(to right, #a8a1e0,#a8a1e0);
+   border-radius: 10px;
+   padding: 10px;
+   margin-top: 13px;
+   box-shadow: 10px 8px 14px 0px rgba(0, 0, 0, 0.144) ;
+   width: 350px;
+   display: inline-block;
+}
+#tiktok{
+    background-image: linear-gradient(to right, #a8a1e0,#a8a1e0);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 13px;
+    box-shadow: 10px 8px 14px 0px rgba(0, 0, 0, 0.144) ;
+    width: 350px;
+    display: inline-block;
+}
