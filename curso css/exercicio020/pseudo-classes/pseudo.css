@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+div{
+    background-color: lightgray;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    display: inline-block;/*comando para as caixas com o conteudo das div dentro ficar uma ao lado da outra*/
+}
+ div:hover{ /*pseudo-classe relativa a div para quando algo passar por cima da div*/
+    background-color: yellow;
+ }
