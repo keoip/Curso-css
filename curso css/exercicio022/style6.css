@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body{
+    height: 100vh;/* E esse height("Altura") "vh" significa view port ou seja o tamanho da tela que sera exibida no site, pagina etc, e colocou "100" para ocupar 100% da tela*/
+    background-color: black;
+    background-image: url('imagens/wallpaper002.jpg');
+    background-repeat: no-repeat;/* Já esse foi paraa imagme não ficar se repetindo varias vezes*/
+    background-position: center top;/*Aqui foi para quando tivermos tamanhos de telas diferentes o meu conteudo dentro de "main" ficar centralizado("center") em cima("top")*/
+
+    background-size: cover;/* Temos 3 funções, "Contain" vai fazer a imagem ser 100% exibida porém dependendo da imagem ela em tela cheia não ocupara ela toda, temos o "Cover" quq vai fazer sua imagem ocupar 100% da vh(view port) mesmo que tenha que cortar ela um pouco*/
+
+    /*background-size: 100% 100%;  Foi para configurar a largura horizontal e vertical na imagem de fundo*/
+}
+main{
+    background-color: white;
+    width: 400px;
+    padding: 10px;
+    text-align: justify;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+}
