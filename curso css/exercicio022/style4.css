@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+body{
+    background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    border: 1px dashed black;
+    background-position: center top; /* aqui temos linhas e colunas, as linhas vem primeiro que são "left, right" as colunas são "top, bottom, center" para a posição que a imagem ira ficar!*/
+    /* background-posicion é como se fosse uma ancora onde voce decide onde ela ira ficar "grudada" parada, onde ela irá começar*/
+    height: 98vh;/* "vh" significa "view port" que é a frente do seu site, da sua pagina*/
+}
