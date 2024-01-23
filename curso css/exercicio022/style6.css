@@ -4,16 +4,23 @@ body{
     height: 100vh;/* E esse height("Altura") "vh" significa view port ou seja o tamanho da tela que sera exibida no site, pagina etc, e colocou "100" para ocupar 100% da tela*/
     background-color: black;
     background-image: url('imagens/wallpaper002.jpg');
-    background-repeat: no-repeat;/* Já esse foi paraa imagme não ficar se repetindo varias vezes*/
+    background-repeat: repeat;/* Já esse foi paraa imagme não ficar se repetindo varias vezes*/
     background-position: center top;/*Aqui foi para quando tivermos tamanhos de telas diferentes o meu conteudo dentro de "main" ficar centralizado("center") em cima("top")*/
 
     background-size: cover;/* Temos 3 funções, "Contain" vai fazer a imagem ser 100% exibida porém dependendo da imagem ela em tela cheia não ocupara ela toda, temos o "Cover" quq vai fazer sua imagem ocupar 100% da vh(view port) mesmo que tenha que cortar ela um pouco*/
 
     /*background-size: 100% 100%;  Foi para configurar a largura horizontal e vertical na imagem de fundo*/
+
+    background-attachment: fixed;/* "attachment" significa "vinculo" onde temos duas funções principais, o "fixed" que deixa a imagem de fundo fixa ou seja quando tivermos um conteudo grande a imagem de fundo não ira rolar junto com texto, e temos a 2° função que é o scrool no qual quando temos uma rolamento com conteudo grande a imagem acompanha a rolagem ou seja ela não fica fixada na tela, não fica parada!*/
+
+    /* SHORTHAND PARA BACKGROUND, TEM QUE SEGUIR ESSA ORDEM:
+      Color(cores pra fundo) > image(imagem de fundo URL) > repeat(Se a imagem vai se repetir por padrão ou não(no-repeat)) > size(tamanho da imagem se adaptada ao site tendo, "cover", "contain", eo "auto") > attachment(vinculo) tendo "fixed" e "scrool"
+      PORÉM NO CASO DO SIZE ELE NÃO FUNCIONA ENT TEM QUE COLOCAR SEPARADO!!
+    */
 }
 main{
     background-color: white;
-    width: 400px;
+    max-width: 400px;
     padding: 10px;
     text-align: justify;
     margin: auto;
