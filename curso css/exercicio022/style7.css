@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+#container{
+    background-image: url('imagens/target001.png');/* Background para colocar imagem */
+    background-size: 100% 100%;/* Background para ajustar o tamanho da imagem */
+    background-color: purple;
+
+
+    padding: 10px;
+    height: 96vh;/* aumentar a exibição da imagem no vh*/
+}
+#conteudo{
+    background-image: url('imagens/target001.png');
+    background-size: 100% 100%;
+
+    /* "position: absolute" é para nos conseguimos manipular a caixa usando "top" " "left" */
+    position: absolute;
+    top: 50%;
+    left:50%;
+    height: 200px;
+    width: 400px;
+    background-color: aqua;
+
+
+    transform: translate(-50%,-50%);
+    /*Transform tem varias funções umas delas é o translate feito para depois de usarmos a posição absoluta(top left) etc ajustarmos a caixa para ficar literalmente no meio do container.
+    Onde "-" negativo fica ( para a esquerda(50%) e para cima(50) e ai então ficando centralizado)
+    tambem tem positivo onde ( para a direita(50) e para baixo(50))
+    */
+
+}
