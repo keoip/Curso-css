@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>display</title>
+    <style>
+      .container {
+        /*Aqui chamamos a class container para fazer a caixa e modificar os elementos usando tipos de dispay com comandos diferentes*/
+        border: 5px solid black; /*comando para fazer a caixa dividido em 3 parametros, o 1° sendo a largura da borda, o 2° sendo o estilo da caixa, e o 3° sendo a cor dela*/
+        width: 500px;
+        height: 500px;
+        display: flex; /* esse display flex é feito para colocar elementos organizados da esquerda para a direita*/
+        flex-direction: column; /*comando para mudar a direção ods elementos, nesse caso sendo "collum" ou seja para cima*/
+        align-items: flex-end; /*alightitens comando para organizar os elementos de maneira horizontal, o flex-end é para os elementos irem para a direita, já o flex-stard é para eles irem para a esquerda*/
+        justify-content: center; /*comando para organizar os itens de maneira vertical, tento o center, right, lefht, etc...*/
+        justify-content: space-between; /*space-between é para os elementos ficarem espaçados*/
+        margin: auto;
+        box-shadow: 5px 5px 15px black;
+      }
+      .container div {
+        /*chamei a class container porem junto com as div que contem dentro da div principal*/
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        border: 1px solid black; /*comando para fazer a caixa dividida em 3 parametros explicados a cima!*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!--Aqui criamos uma div com class para depois chamar no CSS-->
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/*A indicação de uma pseudo-classe é com ":"
+Já a indicação de uma pseudo-elemento é com "::"
+*/
+/*SELETORES PERSONALIZADOS
+   # = ID
+   . = CLASS
+   : = PSEUDO-CLASS
+   :: = PSEUDO-ELEMENTO
+*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {/*comando para quando o mouse passar pro cima(pseudo-class)*/
+  text-decoration: underline; /*comando para sublinhar algo*/
+  color: black;
+}
+.especial:visited {/*".especial" class criada nos links para fazer mudanças personalizadas nos links, junto com uma pseudo-class "visited" para links que já foram abertos, visitados*/
+  color: darkred;
+}
+.especial:active {/*comando "active" par quando o link for clicado, junto com a class criado tbm, sendo uma pseudo-class por causa do ":" */
+  color: yellow;
+}
+.especial::before{/*comando "before" colocar algo antes do link, sendo um pseudo-elemento por causa dos "::"*/
+    content: '→';
+}
+.especial::after { /*pseudo-elemento comando para que depois(after) de todos os links, apareça o que é cada um*/
+  content: ' ← ' /*content significa "conteudo" e logo depois  com '' em volta e dentro o que é o elemento*/
+}

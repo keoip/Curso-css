@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* ">" significa que um elemento é filho de outro, ou seja no caso de baixo "p" é filho de div portanto está dentre de div, o hover é quando o mouse passar por cima, de p mostrara o texto que está escondido por causa do comando display:none, e dps o comando display:block que fala para mostrar
+*/
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+div > p{ /* p sendo filho de div*/
+    display: none;/*significa que vai esconder o que está dentro de p*/
+}
+div:hover{/*quando o mouse passar por cima*/
+    color: brown;
+}
+div:hover > p{/*quando o mouse passar por cima de p filho de div*/
+    display: block;/*ira mostrar o que tem dentro de p*/
+    color: aliceblue;
+    background-color: brown;
+    width: 300px;
+}

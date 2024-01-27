@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/*Não preciso dizer o nome do elemento(h1) colocando só "#" e o nome que a gente nomeou já ta bom!
+Em html é ID e em css é #
+em html é class ew em css é .
+Não usar o mesmo ID em diferentes partes
+*/
+
+body {
+  background-color: #e666cb;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+h1 {
+  color: #68e649;
+}
+#principal {
+  text-align: center;
+  background-color: #e1f9db;
+  height: 40px;
+}
+h2 {
+  color: #baf1ad;
+}
+.basico {
+  color: #f0f1ad;
+  font-family: 'Courier New', Courier, monospace;
+}
+.intermediario {
+  color: #aeadf1;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.avançado {
+  color: #adf1ee;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.destaque{
+    background-color: #8F5382;
+}
