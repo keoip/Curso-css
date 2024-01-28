@@ -19,6 +19,10 @@
     padding: 0;
 }
 
+html,body{
+    min-height: 100vh;
+}
+
 body{
     min-width: 500px;
     max-width: 1900px;
@@ -37,12 +41,12 @@ header{
     color: #FFFFFF;
     min-height: 150px;
     text-align: center;
-    justify-content: center;
 }
-
 header > h1{
   font-family: var(--fonte-destaque);
   font-size: 40px;
+  text-transform: uppercase;  /* Deixa as letras maíusculas */
+  /* font-variant: small-caps; Deixa as letras maíusculas porém as primeiras letras ficam maiores que o restante */
  
 }
 
@@ -65,12 +69,15 @@ h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
 .white{
     font-family: var(--fonte-padrao);
     background-color: #FFFFFF;
     font-size: 40px;
-    padding: 10px;
-
+    padding-top: 10vh; 
+    padding-bottom: 10vh;
+    /* OBSERVAÇÃO, PODEMOS TROCAR O "PADDING" NORMAL PELO "PADDING TOP E BOTTOM COLOCANDO INVÉS DE PX, EM, REM, ETC POR VH("ALTURA DA VIEW PORT, ALTURA DA TELA, DA FRENTE ETC..")"*/
+    padding-left: 30px;
 }
 
 .transparente{
