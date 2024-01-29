@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas simples</title>
+   <style>
+
+      body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      table{
+        height: 300px;
+        border-collapse: collapse; /* comando para juntas as bordas dando cara de tabela*/
+      }
+
+      td{
+        border: 1px solid black;
+        width: 300px;
+        padding: 10px;
+        text-align: center; /* ALINHAMENTO HORIZONTAL TENDO RIGHT,LEFT,CENTER */
+        vertical-align: middle; /* ALINHAMENTO VERTICAL TENDO TOP,MIDDLE,BOTTOM */
+      }
+      .numero{
+        text-align: right; /* ASSIM FAZENDO UMA "MANIPULAÇAO DE DADOS" DE UMA TABELA PARA QUANDO FOR NUMERO POR EXEMPLO PORÉM MANIPULAÇÃO DE DADOS MESMO É QUANDO APRENDEMOS JAVASCRIPT */
+        vertical-align: bottom;
+      }
+   </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--
+        HIERARQUIA DE TABELAS:
+        TABLE: TABELA
+        TABLE ROW: LINHA DE TABELA
+        TABBLE HEADER: CABEÇALHO DA TABELA
+        TABLE DATE: DADOS DA TABELA
+
+        FICANDO ASSIM:
+        TABLE
+             TR = TABLE ROW
+               TD = TABLE DATE
+               TD = TABLE DATE
+               TD = TABLE DATE
+
+             TR = TABLE ROW
+           
+        TABLE
+    -->
+    <table> <!--TABELA-->
+        <tr> <!--PRIMEIRA LINHA-->
+            <td>A1</td> <!--TABLE DATES = DADOS DA TABELA-->
+            <td>B1</td> <!--TABLE DATES = DADOS DA TABELA-->
+            <td>C1</td> <!--TABLE DATES = DADOS DA TABELA-->
+        </tr>
+        <tr> <!--SEGUNDA LINHA-->
+            <td>A2</td> <!--TABLE DATES = DADOS DA TABELA-->
+            <td>B2</td> <!--TABLE DATES = DADOS DA TABELA-->
+            <td class="numero">C2</td> <!--TABLE DATES = DADOS DA TABELA-->
+        </tr>
+        <tr > <!--TERCEIRA LINHA-->
+            <td>A3</td> <!--TABLE DATES = DADOS DA TABELA-->
+            <td>B3</td> <!--TABLE DATES = DADOS DA TABELA-->
+            <td class="numero">C3</td> <!--TABLE DATES = DADOS DA TABELA-->
+        </tr>
+        <tr> <!--QUARTA LINHA-->
+            <td>A4</td> <!--TABLE DATES = DADOS DA TABELA-->
+            <td>B4</td> <!--TABLE DATES = DADOS DA TABELA-->
+            <td>C4</td> <!--TABLE DATES = DADOS DA TABELA-->
+        </tr>
+    </table>
+</body>
+</html>
