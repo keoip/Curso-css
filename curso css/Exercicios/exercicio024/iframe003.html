@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe{
+          border: 2px solid black;
+          width: 95vw;
+          height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat nemo, voluptates aliquid rerum, at accusamus, nihil commodi error vitae id nesciunt dolore incidunt laboriosam quas facilis molestiae. Beatae, perferendis inventore?</p>
+    <ul> <!--Lista criada para colocar 3 links-->
+
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira pagina</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda pagina</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira pagina</a></li>
+        <!--Links para paginas locais que serão colocadas dentro de um iframe dando name ao iframe junto com um target. TARGET="frame" por exemplo"-->
+
+    </ul>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab eligendi quo porro provident, perferendis fugiat voluptatibus doloremque iusto incidunt eum voluptas iure neque illo excepturi quibusdam esse eos eveniet quos.</p>
+    <iframe src="" name="frame" title="tela"> <!--Iframe usado para hospedar os links que estão acima, e colocando um name no proprio para ser camado quando clicar nos 3 links-->
+        <p>infelizmente neu navegador não é compatível</p>
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio maxime ipsum incidunt temporibus, quo error possimus rerum, nobis, repellat eius eaque neque aliquam. Aut praesentium rerum, ea vel neque perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos provident velit officiis enim quas, molestiae, a tenetur ea excepturi voluptas cupiditate, veniam quis unde ipsum nemo? Voluptate voluptatibus ipsa praesentium.</p>
+</body>
+</html>
