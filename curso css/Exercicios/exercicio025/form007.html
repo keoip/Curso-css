@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formularios</title>
+  </head>
+  <body>
+    <h1>Exemplo de formulário</h1>
+    <form action="casdastro.php" method="post">
+      <p>
+        <fieldset>
+            <legend>Datalist & Select</legend>
+            <label for="iesta">Estado:</label>
+            <select name="estado" id="iesta">
+              <option value="" selected>----Escolha-------</option>
+              <optgroup label="Raiz">
+                <option value="SP">São paulo</option>
+                <option value="RJ">Rio de janeiro</option>
+                <option value="ES">Espirito santo</option>
+              </optgroup>
+              <optgroup label="Nutella">
+                <option value="MG">Minas gerais</option>
+                <option value="BH">Bahia</option>
+                <option value="AC">Acre</option>
+              </optgroup>
+            </select>
+                  </p>
+                  <p>
+            <label for="iprofi">Profissão</label>
+            <input type="text" name="profi" id="iprofi" list="ilist">
+                  <datalist id="ilist">
+            <option value="DEV" >desenvolvedor</option>
+            <option value="CONT">Contabilista</option>
+            <option value="JOG">Jogador</option>
+            <option value="PR">Programador</option>
+                  </datalist>
+            <p>
+                <label for="imen">Mensagem</label><br>
+                <textarea name="texto" id="imen" cols="30" rows="10">
+                </textarea>
+            </p>
+                  </p>
+                  <p>DATALIST nós temos uma versatilidade na hora de colocarmos os dados!</p>
+                  <p>
+                    DATALIST sendo uma sugestão do que escolher mas a pessoa pode colocar outro item que não está na lista sugerida, já no select não! lá já é algo definido
+                  </p>
+                  <p>
+                    <ul>
+                        <li>DATALIST</li>
+                        <li>SELECT</li>
+                        <li>TEXTAREA</li>
+                        <li>OPT</li>
+                        <li>OPTGROUD</li>
+                        <li>SELECT</li>
+                        <li>VALUE</li>
+                    </ul>
+                  </p>
+
+        </fieldset>
+      <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+      </p>
+    </form>
+  </body>
+</html>
