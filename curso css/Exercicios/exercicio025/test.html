@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final</title>
+  </head>
+  <body>
+    <h1>Testando Conhecimentos de Formulários</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+      <fieldset>
+        <legend>formulários</legend>
+        <h2>Inicio</h2>
+        <p>
+          <label for="itext">Nome</label>
+          <input
+            type="text"
+            name="texto"
+            id="itext"
+            required
+            autocomplete="name"
+            minlength="3"
+            max="20"
+            placeholder="Nome completo"
+          />
+        </p>
+        <p>
+          <label for="isenha">Senha</label>
+          <input
+            type="password"
+            name="senha"
+            id="isenha"
+            minlength="8"
+            placeholder="8 letras no mínimo"
+            required
+          />
+        </p>
+        <h2>Informações pessoais</h2>
+
+        <p>
+          <label for="inum">Idade:</label>
+          <input type="number" name="numero" id="inum" max="18" required />
+        </p>
+        <p>
+          <label for="imes">Mes Atual:</label>
+          <input type="month" name="mes" id="imes" value="2024-02" required />
+        </p>
+        <p>
+          <label for="idata">Data atual:</label>
+          <input type="date" name="data" id="idata" required />
+        </p>
+        <p>
+          <label for="itel">Telefone</label>
+          <input type="tel" name="tel" id="itel" maxlength="13" required />
+        </p>
+        <p>
+          <label for="iema">Email:</label>
+          <input type="email" name="ema" id="iema" required />
+        </p>
+
+        <h2>Comidas prediletas</h2>
+
+        <p>
+          <input type="checkbox" name="mark" id="icheck"  required />
+          <label for="icheck">Strogonoff</label> <br />
+          <input type="checkbox" name="yui" id="ibat"  required /><label for="ibat">
+            Batata</label
+          >
+          <br />
+          <input type="checkbox" name="arroz" id="iarr"  required /><label for="iarr"
+            >arroz</label
+          >
+          <br />
+          <input type="checkbox" name="feij" id="ifei"  required />
+          <label for="ifei">Feijão</label>
+        </p>
+
+        <h2>Sexo</h2>
+
+        <p>
+          <input type="radio" name="sexo" id="imasc"  required />
+          <label for="imasc">Masculino</label> <br />
+          <input type="radio" name="sexo" id="ifemi"   required/><label for="ifemi"
+            >Feminino</label
+          >
+        </p>
+        <h2>Profissão</h2>
+
+        <label for="iprof">Profissão:</label>
+        <select name="profissao" id="iprof"  required>
+          <option value="" selected>-----Escolha-----</option>
+          <optgroup label="Opções">
+            <option value="">desenvolvedor</option>
+            <option value="">Professor</option>
+            <option value="">Analista</option>
+            <option value="">Cabeleiro</option>
+          </optgroup>
+        </select>
+
+        <p>
+          <label for="itext">Seu trabalho atual:</label>
+          <input type="text" name="texto" id="itext" list="itexto"  required />
+          <datalist id="itexto"  required>
+            <option value="JOG">Jogador</option>
+            <option value="ENG">Engenheiro</option>
+            <option value="CAB">Cabeleiro</option>
+            <option value="PROF">Professor</option>
+          </datalist>
+        </p>
+        <p>
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Limpar" />
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
