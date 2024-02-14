@@ -18,11 +18,19 @@
     </p>
     <p>
         <label for="imedia">Média</label>
-        <input type="number" name="media" id="imedia" step="0.1" required>
+        <input type="number" name="media" id="imedia" step="0.1" required min="0" max="10" placeholder="0 a 10">
     </p>
     <p>
         <label for="idata">Data da aplicação</label>
         <input type="date" name="data" id="idata" required>
+    </p>
+    <p>
+        <label for="ihora">Horário da aplicação</label>
+       <input type="time" name="hora" id="ihora">
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
     </p>
 
 
