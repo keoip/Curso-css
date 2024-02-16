@@ -1,3 +1,11 @@
 @charset "UTF-8";
 
 /* Configurações para celular em deitado(Landscape) */
+
+
+body{
+    background: url('../imagens/cev-landscape.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+}
