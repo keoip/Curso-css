@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/* CONFIGURAÇÕES PARA TABLET */
+
+main header{
+    min-width: 768px;
+    max-width: 992px;
+}
