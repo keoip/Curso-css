@@ -15,7 +15,6 @@ body{
 header{
     background-color: rgb(122, 120, 120);
     height: 79px;
-    width: 100vw;
 }
 
 header > h1{
@@ -47,9 +46,10 @@ main{
     background-color: white;
     margin-left: 10px;
     border-radius: 10px;
-    width: 470px;
+    width: 400px;
     margin: auto;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 article > h2{
