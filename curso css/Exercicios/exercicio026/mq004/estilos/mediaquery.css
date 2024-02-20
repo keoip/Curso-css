@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+/* 
+  Typical Device breakpoints
+--------------------------------
+ TELEFONE: 600PX A 768
+ TABLET: 768 A 992
+ PC,NOTE: 992 A 1200
+ GRANDES TELAS: 1200 PRA CIMA
+*/
+
+@media print{
+   *{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3em;
+   }
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+    main{
+        border: 2px solid black;
+    }
+
+    main::after{
+        content: 'Site impresso por www.w3c.com.br';
+        
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:991px){ /* TABLET */
+ body{
+    background-image: url('../imagens/back-tablet.jpg');
+ }
+
+ main{
+    background-color: rgba(255, 255, 255, 0.551);
+ }
+ 
+ #tablet{display: block;}
+ #tel{display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* PC,NOTE */
+    body {
+      background-image: url('../imagens/back-pc.jpg');
+    }
+
+    main{
+        width: 500px;
+    }
+  
+    #pc { display: block; }
+    #tel { display: none; }
+    #tablet { display: none; }
+  }
+  
+
+@media  screen and (min-width:1200px) { /* TELAS MAIORES */
+    body{
+        background-image: url('../imagens/back-tv.jpg');
+    }
+    
+    main{
+        width: 700px;
+        background-color: rgba(255, 255, 255, 0.756);
+    }
+    #tel{display: none;}
+    #Tv{display: block;}
+}
