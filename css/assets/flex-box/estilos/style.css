@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 450px;
+    height: 450px;
+    border: 2px solid red;
+
+    display: flex;
+   
+}
+
+.box{
+    border: 2px solid green;
+    width: 60px;
+    height: 60px;
+    flex: 1;
+}
+
+#item1{
+    order: 3;
+}
+
+#item2{
+    order: 2;
+}
+
